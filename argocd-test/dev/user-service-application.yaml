@@ -13,7 +13,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Thanu-sri1/task-ust.git
+    repoURL: https://github.com/project-taskflow/taskflow.git
     targetRevision: main
     path: helm
     helm:
