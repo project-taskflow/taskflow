@@ -1,10 +1,13 @@
-﻿apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: taskflow-analytics-service-dev
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
+    ci.smartparking.io/last-built-sha: 87614af5a87ee671e281fd79b273c8b013405dad
+    ci.smartparking.io/last-built-at: "2026-04-28T10:19:40Z"
+    ci.smartparking.io/last-built-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -43,6 +46,7 @@ spec:
           enabled: false
         analyticsService:
           enabled: true
+          image: ghcr.io/project-taskflow/analytics-service:87614af5a87ee671e281fd79b273c8b013405dad
         apiGateway:
           enabled: false
         frontend:
@@ -56,4 +60,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
