@@ -1,10 +1,13 @@
-﻿apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: taskflow-auth-service-dev
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
+    ci.smartparking.io/last-built-sha: 6dd6781b96cbc22106698a32e40b0cca33a37b83
+    ci.smartparking.io/last-built-at: "2026-04-28T10:41:57Z"
+    ci.smartparking.io/last-built-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -35,6 +38,7 @@ spec:
             enabled: false
         authService:
           enabled: true
+          image: ghcr.io/project-taskflow/auth-service:6dd6781b96cbc22106698a32e40b0cca33a37b83
         userService:
           enabled: false
         taskService:
@@ -56,4 +60,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
