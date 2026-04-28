@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "2"
     ci.smartparking.io/last-release-sha: 6dd6781b96cbc22106698a32e40b0cca33a37b83
     ci.smartparking.io/last-release-tag: v1.1.6
-    ci.smartparking.io/last-released-at: "2026-04-28T10:42:40Z"
+    ci.smartparking.io/last-released-at: "2026-04-28T11:26:09Z"
     ci.smartparking.io/last-released-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
