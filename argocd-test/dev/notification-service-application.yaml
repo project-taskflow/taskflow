@@ -5,8 +5,8 @@ metadata:
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
-    ci.smartparking.io/last-built-sha: 84d339085294bde5f6bda04ac5019cc9a335b350
-    ci.smartparking.io/last-built-at: "2026-04-28T11:31:46Z"
+    ci.smartparking.io/last-built-sha: ce1502b6cd4f0722c087709b3fec08f19483474a
+    ci.smartparking.io/last-built-at: "2026-04-28T11:36:47Z"
     ci.smartparking.io/last-built-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -45,7 +45,7 @@ spec:
           enabled: false
         notificationService:
           enabled: true
-          image: ghcr.io/project-taskflow/notification-service:84d339085294bde5f6bda04ac5019cc9a335b350
+          image: ghcr.io/project-taskflow/notification-service:ce1502b6cd4f0722c087709b3fec08f19483474a
         analyticsService:
           enabled: false
         apiGateway:
