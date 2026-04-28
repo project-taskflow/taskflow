@@ -23,15 +23,15 @@ on:
         type: string
       ghcr_namespace:
         required: false
-        default: "nimesh-capstone-project"
+        default: "project-taskflow"
         type: string
       infra_repository:
         required: false
-        default: "Nimesh-Capstone-Project/Parking-System"
+        default: "project-taskflow/taskflow"
         type: string
       infra_ref:
         required: false
-        default: "master"
+        default: "main"
         type: string
     secrets:
       TOKEN:
