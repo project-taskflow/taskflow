@@ -1,10 +1,14 @@
-﻿apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: taskflow-notification-service-prod
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
+    ci.smartparking.io/last-release-sha: ce1502b6cd4f0722c087709b3fec08f19483474a
+    ci.smartparking.io/last-release-tag: v1.1.6
+    ci.smartparking.io/last-released-at: "2026-04-28T11:37:40Z"
+    ci.smartparking.io/last-released-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -41,6 +45,7 @@ spec:
           enabled: false
         notificationService:
           enabled: true
+          image: ghcr.io/project-taskflow/notification-service:v1.1.6
         analyticsService:
           enabled: false
         apiGateway:
@@ -56,4 +61,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
