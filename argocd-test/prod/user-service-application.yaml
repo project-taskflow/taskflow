@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
-    ci.smartparking.io/last-release-sha: 0e574e5799de43a26f1be6706759380f78189422
-    ci.smartparking.io/last-release-tag: v1.1.5
-    ci.smartparking.io/last-released-at: "2026-04-27T15:33:02Z"
+    ci.smartparking.io/last-release-sha: fa29863934be44731f5f117c884c51e2577cfd22
+    ci.smartparking.io/last-release-tag: v1.1.6
+    ci.smartparking.io/last-released-at: "2026-04-28T07:56:04Z"
     ci.smartparking.io/last-released-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -41,7 +41,7 @@ spec:
           enabled: false
         userService:
           enabled: true
-          image: ghcr.io/project-taskflow/user-service:v1.1.5
+          image: ghcr.io/project-taskflow/user-service:v1.1.6
         taskService:
           enabled: false
         notificationService:
