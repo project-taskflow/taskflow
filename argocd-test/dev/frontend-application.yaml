@@ -1,10 +1,13 @@
-﻿apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: taskflow-frontend-dev
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "3"
+    ci.smartparking.io/last-built-sha: 97e74702acfe9946e6b0e7935513552691c27709
+    ci.smartparking.io/last-built-at: "2026-04-28T12:15:17Z"
+    ci.smartparking.io/last-built-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -47,6 +50,7 @@ spec:
           enabled: false
         frontend:
           enabled: true
+          image: ghcr.io/project-taskflow/frontend:97e74702acfe9946e6b0e7935513552691c27709
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
@@ -56,4 +60,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
