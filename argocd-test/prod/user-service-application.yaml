@@ -5,10 +5,10 @@ metadata:
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
-    ci.smartparking.io/last-release-sha: 501f6c171a1af4ae8e15e33a1ffd0f9ca9f42f89
-    ci.smartparking.io/last-release-tag: v1.1.6
-    ci.smartparking.io/last-released-at: "2026-04-28T09:45:21Z"
-    ci.smartparking.io/last-released-by: Thanu-sri1
+    ci.taskflow.io/last-release-sha: 501f6c171a1af4ae8e15e33a1ffd0f9ca9f42f89
+    ci.taskflow.io/last-release-tag: v1.1.6
+    ci.taskflow.io/last-released-at: "2026-04-28T09:45:21Z"
+    ci.taskflow.io/last-released-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
