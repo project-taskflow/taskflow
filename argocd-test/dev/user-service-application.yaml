@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "2"
-    ci.smartparking.io/last-built-sha: 501f6c171a1af4ae8e15e33a1ffd0f9ca9f42f89
-    ci.smartparking.io/last-built-at: "2026-04-28T09:43:31Z"
-    ci.smartparking.io/last-built-by: Thanu-sri1
+    ci.taskflow.io/last-built-sha: 501f6c171a1af4ae8e15e33a1ffd0f9ca9f42f89
+    ci.taskflow.io/last-built-at: "2026-04-28T09:43:31Z"
+    ci.taskflow.io/last-built-by: Thanu-sri1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
